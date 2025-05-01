@@ -22,7 +22,7 @@ export default function Home() {
       title: "Novu Solutions",
       description: "IT consultation firm specializing in cloud computing, cybersecurity, DevOps, software development, and AI-driven solutions. Features responsive design and modern UI/UX.",
       tech: ["React", "Node.js", "AWS", "Material-UI", "Netlify"],
-      link: "https://novusolutions.netlify.app/",
+      link: "https://n0vus.vercel.app/",
       status: "completed",
       isLive: true,
       features: ["Service Showcase", "Project Portfolio", "Contact System"]
