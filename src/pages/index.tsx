@@ -38,6 +38,24 @@ export default function Home() {
       features: ["Damage Detection", "Cost Estimation", "Report Generation"]
     },
     {
+      title: "Solo Stride",
+      description: "Themed from Solo Leveling, level up your life one skill at a time..",
+      tech: ["React", "Node.js", "AWS", "Material-UI", "Vercel"],
+      link: "https://solo-stride.vercel.app/",
+      status: "completed",
+      isLive: true,
+      features: ["Add Skills", "User Dashboard", "Progress Tracking"]
+    },
+    {
+      title: "Azure Dream",
+      description: "AI Agents marketplace plattform",
+      tech: ["React", "Node.js", "n8n", "Material-UI", "Vercel"],
+      link: "https://azure-dream.vercel.app/",
+      status: "completed",
+      isLive: true,
+      features: ["AI Agents", "Marketplace", "User Dashboard"]
+    },
+    {
       title: "Mrenga",
       description: "A modern car blog and review website with dynamic content management. Features responsive design, SEO optimization, and integrated content delivery network.",
       tech: ["React", "Contentful CMS", "Netlify", "TailwindCSS"],
@@ -86,8 +104,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Developer & AI Specialist</title>
-        <meta name="description" content="Professional portfolio of a Developer and AI Specialist" />
+        <title>Software Engineer & AI Specialist</title>
+        <meta name="description" content="Professional portfolio of a Software Engineer and AI Specialist" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <link rel="apple-touch-icon" href="/images/favicon.ico" />
+        <meta name="theme-color" content="#DC2626" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
       {/* Progress Bar */}
@@ -242,7 +264,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
           >
-            Developer & AI Specialist
+            Sofware Engineer & AI Specialist
           </motion.h1>
           <motion.p
             className="text-lg sm:text-xl text-light/80 mb-8 max-w-2xl mx-auto px-4"
@@ -290,6 +312,73 @@ export default function Home() {
             </motion.a>
           </motion.div>
         </motion.div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-16 px-4 sm:px-6 lg:px-8 bg-darker relative overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl font-bold text-light text-glow mb-4">About Me</h2>
+            <p className="text-light/80 max-w-2xl mx-auto">
+              Get to know more about my journey, expertise, and passion for technology
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            {/* Video Player */}
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="relative w-full rounded-lg overflow-hidden shadow-2xl bg-darker"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 opacity-50" />
+              <video
+                className="w-full h-auto max-h-[600px] object-contain"
+                controls
+                poster="/images/profile.jpg"
+                preload="metadata"
+              >
+                <source src="/video/about.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </motion.div>
+
+            {/* About Content */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="space-y-6"
+            >
+              <div className="space-y-4">
+                <h3 className="text-2xl font-semibold text-primary">My Journey</h3>
+                <p className="text-light/80">
+                  As a Software Engineer and AI Specialist, I combine technical expertise with innovative thinking to create impactful solutions. My journey in technology has been driven by a passion for solving complex problems and pushing the boundaries of what's possible.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-2xl font-semibold text-primary">Expertise</h3>
+                <p className="text-light/80">
+                  With extensive experience in both frontend and backend development, I specialize in building scalable applications and integrating AI solutions. My work spans across various domains, from web development to machine learning implementation.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <h3 className="text-2xl font-semibold text-primary">Approach</h3>
+                <p className="text-light/80">
+                  I believe in creating solutions that are not just technically sound but also user-friendly and impactful. My approach combines technical excellence with a deep understanding of user needs and business objectives.
+                </p>
+              </div>
+            </motion.div>
+          </div>
+        </div>
       </section>
 
       {/* Projects Section */}
