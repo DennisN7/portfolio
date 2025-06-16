@@ -50,7 +50,7 @@ export default function Home() {
       title: "Azure Dream",
       description: "AI Agents marketplace plattform",
       tech: ["React", "Node.js", "n8n", "Material-UI", "Vercel"],
-      link: "https://azure-dream.vercel.app/",
+      link: "https://azure-dream-beta.vercel.app/",
       status: "completed",
       isLive: true,
       features: ["AI Agents", "Marketplace", "User Dashboard"]
