@@ -9,33 +9,22 @@ export default function Home() {
 
   const projects = [
     {
-      title: "AI-Powered Rent Collection System",
-      description: "A comprehensive property management solution featuring AI-driven rent collection, tenant management, and automated notifications. Integrates M-Pesa for seamless payments, uses OpenAI for smart reminders, and includes a real-time landlord dashboard.",
-      tech: ["Next.js", "FastAPI", "PostgreSQL", "OpenAI", "M-Pesa API", "Twilio", "Firebase"],
-      link: "#",
-      status: "in-progress",
-      isLive: false,
-      progress: 65,
-      features: ["Landlord Dashboard", "AI Chatbot", "Payment Integration", "Tenant Portal"]
-    },
-    {
       title: "Novu Solutions",
       description: "IT consultation firm specializing in cloud computing, cybersecurity, DevOps, software development, and AI-driven solutions. Features responsive design and modern UI/UX.",
       tech: ["React", "Node.js", "AWS", "Material-UI", "Netlify"],
-      link: "https://n0vus.vercel.app/",
+      link: "https://novu-firm.vercel.app/",
       status: "completed",
       isLive: true,
       features: ["Service Showcase", "Project Portfolio", "Contact System"]
     },
     {
-      title: "SeeCar",
-      description: "AI-powered car damage detection system with automated insurance processing. Uses computer vision for damage assessment and machine learning for cost estimation.",
-      tech: ["Python", "TensorFlow", "React", "AWS", "PostgreSQL"],
-      link: "#",
-      status: "in-progress",
-      isLive: false,
-      progress: 40,
-      features: ["Damage Detection", "Cost Estimation", "Report Generation"]
+      title: "Mrenga",
+      description: "A modern car blog and review website with dynamic content management. Features responsive design, SEO optimization, and integrated content delivery network.",
+      tech: ["React", "Contentful CMS", "Netlify", "TailwindCSS"],
+      link: "https://mrenga.netlify.app/",
+      status: "completed",
+      isLive: true,
+      features: ["Blog System", "Review Platform", "SEO Optimization"]
     },
     {
       title: "Solo Stride",
@@ -56,13 +45,24 @@ export default function Home() {
       features: ["AI Agents", "Marketplace", "User Dashboard"]
     },
     {
-      title: "Mrenga",
-      description: "A modern car blog and review website with dynamic content management. Features responsive design, SEO optimization, and integrated content delivery network.",
-      tech: ["React", "Contentful CMS", "Netlify", "TailwindCSS"],
-      link: "https://mrenga.netlify.app/",
-      status: "completed",
-      isLive: true,
-      features: ["Blog System", "Review Platform", "SEO Optimization"]
+      title: "SeeCar",
+      description: "AI-powered car damage detection system with automated insurance processing. Uses computer vision for damage assessment and machine learning for cost estimation.",
+      tech: ["Python", "TensorFlow", "React", "AWS", "PostgreSQL"],
+      link: "#",
+      status: "in-progress",
+      isLive: false,
+      progress: 40,
+      features: ["Damage Detection", "Cost Estimation", "Report Generation"]
+    },
+    {
+      title: "AI-Powered Rent Collection System",
+      description: "A comprehensive property management solution featuring AI-driven rent collection, tenant management, and automated notifications. Integrates M-Pesa for seamless payments, uses OpenAI for smart reminders, and includes a real-time landlord dashboard.",
+      tech: ["Next.js", "FastAPI", "PostgreSQL", "OpenAI", "M-Pesa API", "Twilio", "Firebase"],
+      link: "#",
+      status: "in-progress",
+      isLive: false,
+      progress: 65,
+      features: ["Landlord Dashboard", "AI Chatbot", "Payment Integration", "Tenant Portal"]
     }
   ];
 
