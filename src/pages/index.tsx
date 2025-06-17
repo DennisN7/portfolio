@@ -27,6 +27,15 @@ export default function Home() {
       features: ["Blog System", "Review Platform", "SEO Optimization"]
     },
     {
+      title: "Alternate History",
+      description: "A modern an history blog where the victors do not get to tell their story.",
+      tech: ["React", "Typescript", "Vercel", "TailwindCSS"],
+      link: "https://alternate-history.vercel.app/",
+      status: "completed",
+      isLive: true,
+      features: ["Blog System", "Review Platform", "SEO Optimization"]
+    },
+    {
       title: "Solo Stride",
       description: "Themed from Solo Leveling, level up your life one skill at a time..",
       tech: ["React", "Node.js", "AWS", "Material-UI", "Vercel"],
